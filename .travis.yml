@@ -6,3 +6,20 @@ node_js:
   - 'iojs'
 before_install:
   - npm install -g npm@latest
+matrix:
+    include:
+         - node_js: "6.17"
+           arch: ppc64le
+         - node_js: "7.10"
+           arch: ppc64le
+         - node_js: "8.16"
+           arch: ppc64le
+         - node_js: "9.11"
+           arch: ppc64le
+         - node_js: "10.16"
+           arch: ppc64le
+         - node_js: "11.15"
+           arch: ppc64le
+         - node_js: "12.6"
+           arch: ppc64le
+
